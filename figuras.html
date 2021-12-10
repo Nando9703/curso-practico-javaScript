@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas</title>
+</head>
+<body>
+    <header>
+        <h1>Figuras Geometricas</h1>
+        <p>Este es el primer taller del curso practico de javaScritp</p>
+    </header>
+    <section>
+        <h2>Calcula el Área y el Perimetro de un cuadrado</h2>
+        <form action="">
+            <label for="InputCuadrado">
+                Ingrese el lado del cuadrado:
+            </label>
+            <input id="InputCuadrado" type="number">
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular Perimetro</button>
+            <button type="button" onclick="calcularAreaCuadrado()">Calcular Area</button>
+            
+        </form>
+    </section>
+    <section>
+        <h2>Calcula el Área y el Perimetro de un triangulo</h2>
+        <form action="">
+            <!-- Pidiendo Primer Lado triangulo -->            
+            <label for="InputTriangulo1">
+                Ingrese el primer lado del triangulo:
+            </label>
+            <input id="InputTriangulo1" type="number">
+
+            <!-- Pidiendo Segundo Lado triangulo -->
+            <label for="InputTriangulo2">
+                Ingrese el segundo lado del triangulo:
+            </label>
+            <input id="InputTriangulo2" type="number">
+            
+            <!-- Pidiendo Tercer Lado triangulo -->
+            <label for="InputTriangulo3">
+                Ingrese el tercer lado del triangulo:
+            </label>
+            <input id="InputTriangulo3" type="number">
+
+            <button type="button" onclick="CalcularPerimetroTriangulo()">Calcular Perimetro</button>
+            <button type="button" onclick="CalcularAreaTriangulo()">Calcular Area</button>
+            
+        </form>
+    </section>
+    <script src="./figuras.js"></script>
+</body>
+</html>

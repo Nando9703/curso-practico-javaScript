@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y Descuentos</title>
+</head>
+<body>
+    <header>
+
+        <h1>Porcentajes y descuentos</h1>
+        <p>Este es el Segundo taller del Curso Practico de JavaScritp</p>
+    </header>
+    <section>
+        <h2>Calcula el precio con descuento</h2>
+        <form>
+            <label for="InputPrice">Escribe el precio del producto:</label>
+            <input id="InputPrice" type="number">
+
+            <label for="InputDiscount">Escribe el Descuento del producto:</label>
+            <input id="InputDiscount" type="number">
+
+            <button type="button" onclick="onclickButtonCalcularDescuento()">
+                Calcular el precio con descuento
+            </button>
+            <p id="ResultadoFinal"></p>
+        </form>
+    </section>
+    <section>
+        <h2>Calcula el precio con descuento (Cupon)</h2>
+        <form>
+            <label for="InputPriceCupon">Escribe el precio del producto:</label>
+            <input id="InputPriceCupon" type="number"> <br>
+
+            <label for="selecionCupon">Cupon de Descuento:</label>
+            <select name="selecionCupon" id="selecionCupon">
+                <option value="0.20">20%</option>
+                <option value="0.30">30%</option>
+                <option value="0.50%">50%</option>
+
+            </select><br>
+
+            <button type="button" onclick="onclickButtonCalcularDescuentoCupon()">
+                Calcular el precio con descuento
+            </button>
+            <p id="ResultadoFinalCupon"></p>
+        </form>
+    </section>
+    <script src="./descuentos.js"></script>
+</body>
+</html>
